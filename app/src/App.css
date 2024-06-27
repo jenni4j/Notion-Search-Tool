@@ -5,66 +5,30 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+body {
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to top, rgba(255,0,0,0), rgb(180, 146, 179));
+  min-height: 100vh; /* Ensure full viewport height coverage */
+  display: flex; /* Use flexbox to center content */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
 }
 
 .App {
     text-align: center;
     font-family: Arial, sans-serif;
     padding: 20px;
+    max-width: 1280px;
 }
 
 .App-header {
-  background-color: #45a06a;
+  background-color: transparent;
   padding: 20px;
   color: white;
   margin-bottom: 20px;
-}
-
-.file-input {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.custom-file-upload {
-  border: 1px solid #ccc;
-  display: inline-block;
-  padding: 6px 12px;
-  cursor: pointer;
+  font-family: 'American Typewriter';
 }
 
 .question-input textarea {
@@ -79,7 +43,7 @@
   font-size: 16px;
   border: none;
   border-radius: 5px;
-  background-color: #4d7979;
+  background-color: #81455f;
   color: white;
   cursor: pointer;
 }
@@ -99,6 +63,3 @@
   background-color: #f9f9f9;
 }
 
-#file-upload {
-  display: none;
-}
